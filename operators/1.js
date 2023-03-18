@@ -48,7 +48,7 @@ console.log(Math.random());// Math.random will generate number from (0-0.99) and
 // Increment and Decrement Operators
 
 a = a + 1;
-a += 1;
+a += 1; // => a = a + 1
 a++;//Post increment
 console.log(a); // The value of a is 10 after post increment it will be 11
 console.log(a++);// if we do post increment in console.log it will print 10
