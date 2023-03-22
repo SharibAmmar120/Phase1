@@ -19,3 +19,9 @@ console.log(index);
 //.last index
 var lastIndex=fruits.lastIndexOf("banana")
 console.log(lastIndex);
+
+
+
+// two objects printed false
+// it is passed by refernce it is not passed by value
+// bacause they are not stored at same memory location

@@ -22,7 +22,7 @@ console.log(arr[i]);
 
 
 //Declarative approch(Array helper method)
-//Anonymous Function
-arr.forEach((ele,i)=>{ //To get the element we do ele,to get index we do i
+//Anonymous Function->(ele,i)=>{} it i a callback function
+arr.forEach((ele,i)=>{ //To get the element we do ele(),to get index we do i
     console.log(ele,i);
 })
