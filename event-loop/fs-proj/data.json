@@ -1,0 +1,17 @@
+[
+    
+    {
+        "fname": "Sharib",
+        "lname": "Ammar",
+        "age": "24",
+        "address": "Hyderabad"
+    },
+  
+    {
+        "fname": "Sharib",
+        "lname": "Ammar",
+        "age": "24",
+        "address": "Hyderabad",
+        "email": "sarwar@gmail.com"
+    }
+]
