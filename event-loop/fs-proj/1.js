@@ -26,15 +26,15 @@ fs.readFile("data.json",(error , data )=>{
    
         // console.log(data.toString());
         // data = data.toString
-        data=JSON.parse(data)//parsing and storing in data
+        data=JSON.parse(data)//JSON.parse=>converting string to JS object
         const found =data.find((ele)=>ele.email===user.email)
-        // ele email from itration of object      user.eamil is from function 
+        // ele email from itration of object      user.email is from function 
         if(found) return console.log("Email is already registeterd");
         
         // data.push("Something random")
         data.push(user)
         // console.log(data);
-        fs.writeFile("data.json", JSON.stringify(data),(error)=>{ //we can only pass data only if it is string ,JSON.stringfy
+        fs.writeFile("data.json", JSON.stringify(data),(error)=>{ //we can only pass data only if it is string ,JSON.stringfy=>converts object literal to string
             if(error) return console.log(error);
             console.log("user successfully added");
         })
