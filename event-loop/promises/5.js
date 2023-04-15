@@ -1,5 +1,5 @@
 import axios from "axios"
-
+//Promise.all:resolving all promises
 const githubUsers = ["sharibammar120", "TPAteeq", "Abdul535"]
 var userData = []
 function hitGithub(username) {
