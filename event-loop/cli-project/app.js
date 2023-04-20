@@ -21,10 +21,43 @@ async function main(){
             spinner.stop("clean")
             return Main()
 
-        }
-        else{
+ 
+        } else {
+            switch (option) {
+                case 0:
+                    console.log("Exiting , Bye")
+                    break;
+                case 1:
+                    await cityCoords()
+                    break;
+                case 2:
+                    await Celsius()
+                    break;
+                case 3:
+                    console.log("This is where Live Temperature in \u2109 will be found and displayed")
+                    break;
+                case 4:
+                    console.log("This is where Live Temperature in \u212A will be found and displayed")
+                    break;
+                case 7:
+                    await getTime()
+                    break;
+            }
+            var willContinue = readLineSync.question("Do you want to Continue? (Y/N) : ");
+            if (willContinue == 'y' || willContinue == 'Y' || willContinue == "yes" || willContinue == "Yes") {
+                let spinner = loading("Redirecting to menu ....")
+                await setTimeout(2000)
+                spinner.stop()
+                return Main()
+            } else {
+                console.log(chalk.bgGreenBright("Thank you for Using our application , See You Again!"))
+            }
+
 
         }
-
+    } catch (error) {
+        console.log(error);
+    }
 }
-main()
+
+Main()
