@@ -19,7 +19,7 @@ hitAPI(num1, num2)
         const num3 = readLineSync.questionInt("Enter Number 3 : ");
         return hitAPI(sum1, num3) //performing axios addition using function call
     })
-    .then(res => {
+    .then(res => { //this .then have access to previous return values
         const sum2 = res.data.data
         console.log("The Sum2 : ", sum2);
         const num4 = readLineSync.questionInt("Enter Number 4 : ");

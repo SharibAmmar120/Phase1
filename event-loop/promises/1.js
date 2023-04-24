@@ -5,7 +5,7 @@ import axios from "axios"
 console.log("Hi");
 axios.get("https://jsonplaceholder.typicode.com/users") //API to get data
   .then((res)=>{ //.then is used to resolve a promise
-    console.log(res.data);//response.data to get only data other stuff is removed
+    console.log(res.data);//response.data to get only data other stuff(meta data) is removed
   })
   .catch((err)=>{ //if the promise is rejected catch is used
     console.log(err);

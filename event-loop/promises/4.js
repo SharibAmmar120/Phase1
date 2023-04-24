@@ -29,5 +29,5 @@ githubUsers.forEach(ele => {
 // console.log(hitGithub("sharibammar120"));
 setTimeout(()=>{
    console.log(userData);
-},2000)//(wrong way to to do it)
+},2000)//(wrong way to to do it) promise is asynchronous and it returns an empty array in this case so we do Promise.all(artificial way)
 
